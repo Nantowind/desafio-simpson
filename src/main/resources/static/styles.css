@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFD700;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dona-img,
+.homero-img {
+    width: 150px;
+    height: auto;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input[type="number"] {
+    margin-top: 5px;
+    padding: 5px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #FFD700;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A0522D;
+}
+.result-img-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.result-img-container img {
+    margin-right: 10px;
+}
+
+.result-img-container span {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #FFD700;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #A0522D;
+}
+
+.acertijo {
+    font-size: 18px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}

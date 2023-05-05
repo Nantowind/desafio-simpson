@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Simpson - Formulario de Donas</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<h1>Desafio los simpson</h1>
+
+
+<form th:action="@{/enviar-donas}" th:method="post">
+    <div class="form-group">
+        <img src="/img/homero.png" alt="homero" class="homero-img">
+        <label for="donas-cantidad-homero">Ingrese cantidad de donas:</label>
+        <input type="number" id="donas-cantidad-homero" name="donas-cantidad-homero" min="0" required>
+    </div>
+    <div class="form-group">
+        <img src="/img/eduardo.webp" alt="eduardo" class="dona-img">
+        <label for="donas-eduardo">Ingrese cantidad de donas de eduardo:</label>
+        <input type="number" id="donas-eduardo" name="donas-eduardo" min="0" required>
+    </div>
+    <div class="form-group">
+        <label for="donas-robadas">Ingrese cantidad de donas a robar a Homero:</label>
+        <input type="number" id="donas-robadas" name="donas-robadas" min="0" required>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<p class="acertijo">
+    La planta nuclear de Springfield necesita mantener entre 9,500 y 10,000 unidades de uranio para funcionar correctamente. Homero y el pato Eduardo trabajan juntos durante 8 horas diarias para lograr esto. Eduardo es más eficiente que Homero y puede cargar hasta 18 unidades de uranio por hora por cada unidad de energía que tiene. Por otro lado, Homero solo puede cargar 6 unidades de uranio por cada unidad de energía.<br><br>
+
+    Homero puede volverse loco si su energía supera las 80 unidades debido a la radiación del uranio. Si su energía baja de las 70 unidades, se distraerá. ¡En ambos casos, la planta dejará de funcionar!<br><br>
+
+    Eduardo es menos tolerante a la radiación y solo puede soportar 45 unidades de energía antes de volverse loco. Se distraerá si tiene menos de 35 unidades de energía.<br><br>
+
+    Para mantener la energía de los empleados, el Sr. Burns ha destinado $155 para comprar donas. Cada dona cuesta $4, y si se gastan más de $155, el Sr. Burns quedará en bancarrota y la planta se irá al "hoyo del diablo".<br><br>
+
+    Cada dona proporciona 3 unidades de energía a los empleados. Sin embargo, Eduardo tiene una habilidad especial para robar donas a Homero. ¡Cuando le roba donas a Homero, cada dona robada le proporciona 4 unidades de energía!<br><br>
+
+    El desafío es encontrar la cantidad adecuada de donas para Homero y Eduardo, y cuántas donas debe robar Eduardo para mantener la planta nuclear funcionando correctamente sin que ninguno de ellos se vuelva loco o se distraiga, y sin que el Sr. Burns quede en bancarrota.
+</p>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado - Planta Nuclear</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<h1>Resultado de la Planta Nuclear</h1>
+<div th:if="${algunaCondicionCumplida}">
+    <h2 th:text="'La cantidad de uranio en la planta nuclear es: ' + ${uranio}"></h2>
+
+    <div class="result-img-container" th:if="${peligro}" >
+        <img src="/img/falla_planta.png" alt="Homero distraído">
+        <span>¡la planta nuclear esta fallando!</span>
+    </div>
+
+    <div class="result-img-container" th:if="${homeroDistraido}">
+        <img  src="/img/homero_distraido.png" alt="Homero distraído">
+        <span>¡Homero se distrajo por tener poca energia! </span>
+    </div>
+
+    <div class="result-img-container" th:if="${homeroLoco}" >
+        <img src="/img/homero_enojado.webp" alt="Homero loco">
+        <span>¡Homero se volvio loco por tener demasiada energia! </span>
+    </div>
+
+    <div class="result-img-container" th:if="${patoDistraido}">
+        <img  src="/img/pato_distraido.png" alt="Pato distraído">
+        <span>¡Eduardo se distrajo por falta de energia!</span>
+    </div>
+
+    <div class="result-img-container" th:if="${patoLoco}" >
+        <img src="/img/pato_loco.png" alt="Pato loco">
+        <span>¡Eduardo se volvio loco y muto por tener demasiada energia!</span>
+    </div>
+
+    <div class="result-img-container" th:if="${srBurnsBancaRota}">
+        <img  src="/img/burns_bancarota.jpeg" alt="Sr. Burns en bancarrota">
+        <span>¡El sr burns quedo en banca rota por comprar demasiadas donas!</span>
+    </div>
+</div>
+<div th:if="${!algunaCondicionCumplida}">
+    <h2>¡Genial estamos salvados!</h2>
+    <h3>Agradecemos enormemente a la inerte barra de carbono que, con su acto heroico de calcular, nos ha salvado a todos.</h3>
+    <img src="/img/barra_de_carbon.png" alt="Lo lograste">
+</div>
+<a class="btn" href="/index">Volver al formulario</a>
+</body>
+</html>
