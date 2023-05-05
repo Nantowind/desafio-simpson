@@ -28,6 +28,9 @@
 
     <button type="submit">Enviar</button>
 </form>
+<div th:if="${error}" id="error">
+    <p th:text="${error}"></p>
+</div>
 
 <p class="acertijo">
     La planta nuclear de Springfield necesita mantener entre 9,500 y 10,000 unidades de uranio para funcionar correctamente. Homero y el pato Eduardo trabajan juntos durante 8 horas diarias para lograr esto. Eduardo es más eficiente que Homero y puede cargar hasta 18 unidades de uranio por hora por cada unidad de energía que tiene. Por otro lado, Homero solo puede cargar 6 unidades de uranio por cada unidad de energía.<br><br>
@@ -36,7 +39,7 @@
 
     Eduardo es menos tolerante a la radiación y solo puede soportar 45 unidades de energía antes de volverse loco. Se distraerá si tiene menos de 35 unidades de energía.<br><br>
 
-    Para mantener la energía de los empleados, el Sr. Burns ha destinado $155 para comprar donas. Cada dona cuesta $4, y si se gastan más de $155, el Sr. Burns quedará en bancarrota y la planta se irá al "hoyo del diablo".<br><br>
+    Para mantener la energía de los empleados, el Sr. Burns ha destinado $155 para comprar donas. Cada dona cuesta $4, y si se gastan más de $155, el Sr. Burns quedará en bancarrota y la planta se irá al "hoyito del diablo".<br><br>
 
     Cada dona proporciona 3 unidades de energía a los empleados. Sin embargo, Eduardo tiene una habilidad especial para robar donas a Homero. ¡Cuando le roba donas a Homero, cada dona robada le proporciona 4 unidades de energía!<br><br>
 

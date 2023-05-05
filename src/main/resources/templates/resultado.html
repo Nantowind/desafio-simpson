@@ -11,7 +11,7 @@
 <div th:if="${algunaCondicionCumplida}">
     <h2 th:text="'La cantidad de uranio en la planta nuclear es: ' + ${uranio}"></h2>
 
-    <div class="result-img-container" th:if="${peligro}" >
+    <div class="result-img-container" th:if="${plantaEnPeligro}" >
         <img src="/img/falla_planta.png" alt="Homero distraído">
         <span>¡la planta nuclear esta fallando!</span>
     </div>

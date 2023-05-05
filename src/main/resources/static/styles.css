@@ -90,5 +90,20 @@ button:hover {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-weight: bold;
     line-height: 1.5;
-    margin-bottom: 1.5em;
+    background-color: #dcdcdc;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#error {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #721c24;
+    padding: 10px;
+    margin-bottom: 20px;
 }
